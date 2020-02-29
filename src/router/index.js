@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ListArticle from '../views/ListArticle.vue'
 import CreateArticle from '../views/CreateArticle.vue'
+import EditArticle from '../views/EditArticle.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
     path: '/articles/create',
     name: 'Create-Article',
     component:CreateArticle
+  },
+  {
+    path: '/articles/:id/edit',
+    name: 'Edit-Article',
+    component:EditArticle
   }
 ]
 
